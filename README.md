@@ -1,3 +1,3 @@
 # Projeto Happy
 
-Projeto para achar orfanatos e cadastrar novos, usando JavaScript e com Back-End no final do projeto. Usando Sass para praticar e Nodejs no back-End.
+Projeto para achar orfanatos e cadastrar novos. Usando Sass na estilização e JavaScript com Nodejs no back-End.
