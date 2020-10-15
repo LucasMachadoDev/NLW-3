@@ -1,33 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+/* line 3, ../sass/style.sass */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/* line 8, ../sass/style.sass */
 :root {
   font-size: 62.5%; }
 
+/* line 11, ../sass/style.sass */
 html, body {
   height: 100vh;
   color: white;
   background: #ebf2f5; }
 
+/* line 16, ../sass/style.sass */
 body, input, button, textarea {
   font: 400 1.8rem/1 "Nunito", sans-serif; }
 
+/* line 1, ../sass/page-landing.sass */
 #page-landing {
   background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
   min-height: 100vh;
   text-align: center;
   display: flex; }
 
+/* line 7, ../sass/page-landing.sass */
 #container {
   margin: auto;
   width: min(90%, 112rem); }
 
+/* line 11, ../sass/page-landing.sass */
 .location, h1, .visit p {
   height: 16vh; }
 
+/* line 15, ../sass/page-landing.sass */
 .visit a {
   width: 8rem;
   height: 8rem;
@@ -39,62 +47,78 @@ body, input, button, textarea {
   justify-content: center;
   margin: auto;
   transition: 200ms; }
+  /* line 26, ../sass/page-landing.sass */
   .visit a:hover {
     background: #96feff; }
+/* line 28, ../sass/page-landing.sass */
 .visit p {
   animation-delay: 200ms; }
+/* line 30, ../sass/page-landing.sass */
 .visit a {
   animation-delay: 250ms; }
 
+/* line 33, ../sass/page-landing.sass */
 #logo {
   animation-delay: 50ms; }
 
+/* line 36, ../sass/page-landing.sass */
 .location {
   animation-delay: 100ms; }
 
+/* line 39, ../sass/page-landing.sass */
 main h1 {
   animation-delay: 150ms;
   font-size: clamp(4rem, 8vw, 8.4rem); }
 
 @media screen and (min-width: 760px) {
+  /* line 46, ../sass/page-landing.sass */
   #container {
     background: url("../img/bg.svg") no-repeat 80%/clamp(30rem, 54vw, 56rem);
     padding: 5rem 2rem; }
 
-  #page-landing > header {
+  /* line 50, ../sass/page-landing.sass */
+  #principal {
     display: flex;
     align-items: center;
     justify-content: space-between; }
 
+  /* line 55, ../sass/page-landing.sass */
   .location, h1, .Visit p {
     height: initial;
     text-align: initial; }
 
+  /* line 59, ../sass/page-landing.sass */
   .location {
     text-align: right;
     font-size: 2.4rem;
     line-height: 1.5; }
 
+  /* line 64, ../sass/page-landing.sass */
   main h1 {
     line-height: 0.88;
     font-weight: bold;
     width: min(300px, 80%);
     margin: clamp(10%, 9vh, 12%) 0 4rem; }
 
+  /* line 70, ../sass/page-landing.sass */
   .visit {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    /* line 74, ../sass/page-landing.sass */
     .visit p {
       font-size: 2.4rem;
       line-height: 1.5;
       width: clamp(20rem, 20vw, 30rem); }
+    /* line 78, ../sass/page-landing.sass */
     .visit a {
       margin: initial; } }
+/* line 1, ../sass/page-orphanages.sass */
 #page-orphanages {
   width: 100%;
   height: 100%;
   display: flex; }
+  /* line 5, ../sass/page-orphanages.sass */
   #page-orphanages aside {
     width: clamp(24rem, 25vw, 44rem);
     background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
@@ -102,18 +126,23 @@ main h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    /* line 12, ../sass/page-orphanages.sass */
     #page-orphanages aside h2 {
       margin-top: 6.4rem;
       font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 "Nunito", sans-serif; }
+    /* line 15, ../sass/page-orphanages.sass */
     #page-orphanages aside p {
       margin-top: 2.4rem;
       font: 400 1.6rem/1.5 "Nunito", sans-serif; }
+    /* line 18, ../sass/page-orphanages.sass */
     #page-orphanages aside footer p {
       margin-top: 0.8rem; }
+  /* line 21, ../sass/page-orphanages.sass */
   #page-orphanages #mapid {
     width: 100%;
     height: 100%;
     animation-delay: 200ms; }
+  /* line 26, ../sass/page-orphanages.sass */
   #page-orphanages a.create-orphanage {
     position: absolute;
     bottom: 4rem;
@@ -128,11 +157,14 @@ main h1 {
     align-items: center;
     transition: background-color 200ms;
     z-index: 10; }
+    /* line 40, ../sass/page-orphanages.sass */
     #page-orphanages a.create-orphanage:hover {
       background: #17d6eb; }
+  /* line 43, ../sass/page-orphanages.sass */
   #page-orphanages .leaflet-popup-content-wrapper {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px; }
+  /* line 47, ../sass/page-orphanages.sass */
   #page-orphanages .leaflet-popup-content {
     color: #0089a5;
     font: 700 2rem/1 "Nunito", sans-serif;
@@ -140,6 +172,7 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    /* line 54, ../sass/page-orphanages.sass */
     #page-orphanages .leaflet-popup-content a {
       width: 4rem;
       height: 4rem;
@@ -150,16 +183,21 @@ main h1 {
       justify-content: center;
       align-items: center;
       transition: background-color 0.2s; }
+      /* line 64, ../sass/page-orphanages.sass */
       #page-orphanages .leaflet-popup-content a:hover {
         background: #17d6eb; }
+  /* line 67, ../sass/page-orphanages.sass */
   #page-orphanages .leaflet-popup-tip {
     display: none; }
+  /* line 70, ../sass/page-orphanages.sass */
   #page-orphanages .leaflet-container {
     z-index: 5; }
 
+/* line 1, ../sass/page-orphanage.sass */
 #page-orphanage {
   display: flex;
   min-height: 100vh; }
+  /* line 4, ../sass/page-orphanage.sass */
   #page-orphanage .orphanage-details {
     width: 70rem;
     margin: 6.4rem auto;
@@ -167,15 +205,18 @@ main h1 {
     border: 1px solid #d3e2e5;
     border-radius: 2rem;
     overflow: hidden; }
+    /* line 11, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details > img {
       width: 100%;
       height: 30rem;
       object-fit: cover; }
+    /* line 15, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details .images {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       column-gap: 1.6rem;
       margin: 16px 40px 0; }
+      /* line 20, ../sass/page-orphanage.sass */
       #page-orphanage .orphanage-details .images button {
         border: 0;
         background: none;
@@ -185,63 +226,79 @@ main h1 {
         overflow: hidden;
         opacity: 0.6;
         transition: opacity 0.2s; }
+        /* line 29, ../sass/page-orphanage.sass */
         #page-orphanage .orphanage-details .images button img {
           width: 100%;
           height: 8.8rem;
           object-fit: cover; }
+      /* line 33, ../sass/page-orphanage.sass */
       #page-orphanage .orphanage-details .images button:hover,
       #page-orphanage .orphanage-details .images button.active {
         opacity: 1; }
+  /* line 36, ../sass/page-orphanage.sass */
   #page-orphanage .orphanage-details-content {
     padding: 8rem; }
+    /* line 38, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details-content h1 {
       color: #4d6f80;
       font-size: 5.4rem;
       line-height: 1.5;
       margin-bottom: 0.8rem; }
+    /* line 43, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details-content h2 {
       font-size: 3.6rem;
       line-height: 1.5rem;
       color: #4d6f80; }
+    /* line 47, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details-content p {
       line-height: 1.6;
       color: #5c8599;
       margin-top: 2.4rem; }
+    /* line 51, ../sass/page-orphanage.sass */
     #page-orphanage .orphanage-details-content hr {
       width: 100%;
       height: 1px;
       border: 0;
       background: #d3e2e6;
       margin: 6.4rem 0; }
+  /* line 57, ../sass/page-orphanage.sass */
   #page-orphanage .open-details {
     margin-top: 2.4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+    /* line 62, ../sass/page-orphanage.sass */
     #page-orphanage .open-details img {
       display: block;
       margin-bottom: 2rem; }
+    /* line 65, ../sass/page-orphanage.sass */
     #page-orphanage .open-details div {
       padding: 3.2rem 2.4rem; }
+    /* line 67, ../sass/page-orphanage.sass */
     #page-orphanage .open-details .hour {
       background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
       border: 1px solid #b3dae2;
       border-radius: 20px;
       color: #5c8599; }
+    /* line 72, ../sass/page-orphanage.sass */
     #page-orphanage .open-details .open-on-weekends {
       background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
       border: 1px solid #a1e9c5;
       border-radius: 20px;
       color: #37c77f; }
 
+/* line 1, ../sass/page-create-orphanage.sass */
 #page-create-orphanage {
   display: flex;
   min-height: 100vh; }
 
+/* line 5, ../sass/page-create-orphanage.sass */
 .map-container {
   margin: 0 0 4rem; }
+  /* line 7, ../sass/page-create-orphanage.sass */
   .map-container .leaflet-container {
     border-radius: 20xp 20px 0 0; }
+  /* line 9, ../sass/page-create-orphanage.sass */
   .map-container footer {
     background: #f5f8fa;
     border-radius: 0 0 20px 20px; }
@@ -263,40 +320,49 @@ main h1 {
     opacity: 0; }
   to {
     opacity: 1; } }
+/* line 23, ../sass/animations.sass */
 .animate-up {
   animation-name: up;
   animation-duration: 300ms;
   animation-fill-mode: backwards; }
 
+/* line 28, ../sass/animations.sass */
 .animate-right {
   animation-name: right;
   animation-duration: 300ms; }
 
+/* line 32, ../sass/animations.sass */
 .animate-apper {
   animation-name: apper;
   animation-duration: 300ms;
   animation-fill-mode: backwards; }
 
+/* line 1, ../sass/map.sass */
 .map-container {
   margin-top: 6.4rem;
   background: #e6f7fd;
   border: 1px solid #dde3f0;
   border-radius: 2rem; }
+  /* line 6, ../sass/map.sass */
   .map-container .leaflet-container {
     border-bottom: 1px solid #dde3f0;
     border-radius: 2rem; }
+  /* line 9, ../sass/map.sass */
   .map-container footer {
     padding: 2rem 0;
     text-align: center; }
+    /* line 12, ../sass/map.sass */
     .map-container footer a {
       color: #0089a5;
       text-decoration: none;
       font-weight: 700; }
 
+/* line 17, ../sass/map.sass */
 #mapid {
   width: 100%;
   height: 28rem; }
 
+/* line 1, ../sass/sidebar.sass */
 aside.sidebar {
   position: fixed;
   height: 100%;
@@ -306,6 +372,7 @@ aside.sidebar {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  /* line 10, ../sass/sidebar.sass */
   aside.sidebar button {
     width: 48px;
     height: 48px;
@@ -317,15 +384,19 @@ aside.sidebar {
     display: flex;
     align-items: center;
     justify-content: center; }
+    /* line 21, ../sass/sidebar.sass */
     aside.sidebar button:hover {
       background: #17d6eb; }
 
+/* line 24, ../sass/sidebar.sass */
 main {
   flex: 1; }
 
+/* line 27, ../sass/sidebar.sass */
 main.width-sidebar {
   padding-left: 110px; }
 
+/* line 1, ../sass/buttons.sass */
 .primary-button {
   margin-top: 6.4rem;
   width: 100%;
@@ -339,29 +410,37 @@ main.width-sidebar {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s; }
+  /* line 14, ../sass/buttons.sass */
   .primary-button img {
     margin-right: 1.6rem; }
+  /* line 16, ../sass/buttons.sass */
   .primary-button:hover {
     background: #36cf82; }
 
+/* line 19, ../sass/buttons.sass */
 .button-select {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  /* line 22, ../sass/buttons.sass */
   .button-select button {
     height: 6.4rem;
     color: #f5f8fa;
     border: 1px solid #d3e2e5;
     color: #5c8599;
     cursor: pointer; }
+    /* line 28, ../sass/buttons.sass */
     .button-select button:first-child {
       border-radius: 2rem 0 0 2rem; }
+    /* line 30, ../sass/buttons.sass */
     .button-select button:last-child {
       border-radius: 0 2rem 2rem 0; }
+  /* line 32, ../sass/buttons.sass */
   .button-select button.active {
     background: #edfff6;
     border: 1px solid #a1e9c5;
     color: #37c77f; }
 
+/* line 1, ../sass/forms.sass */
 form {
   width: 70rem;
   margin: 6.4rem auto;
@@ -371,10 +450,13 @@ form {
   border-radius: 2rem;
   overflow: hidden; }
 
+/* line 10, ../sass/forms.sass */
 fieldset {
   border: 0; }
+  /* line 12, ../sass/forms.sass */
   fieldset + fieldset {
     margin-top: 8rem; }
+  /* line 14, ../sass/forms.sass */
   fieldset legend {
     width: 100%;
     font: 700 3.2rem/1.5 "Nunito", sans-serif;
@@ -383,17 +465,21 @@ fieldset {
     margin-bottom: 4rem;
     padding-bottom: 2.4rem; }
 
+/* line 23, ../sass/forms.sass */
 .input-block + .input-block {
   margin-top: 2.4rem; }
+/* line 25, ../sass/forms.sass */
 .input-block label {
   color: #8fa7b3;
   margin-bottom: 0.8rem;
   line-height: 1.5; }
+  /* line 29, ../sass/forms.sass */
   .input-block label span {
     font-size: 1.4rem;
     color: #8fa7b3;
     margin-left: 2.4rem;
     line-height: 1.5; }
+/* line 34, ../sass/forms.sass */
 .input-block input,
 .input-block textarea {
   width: 100%;
@@ -401,22 +487,28 @@ fieldset {
   border: 1px solid #d3e2e5;
   border-radius: 2rem;
   color: #5c8599; }
+  /* line 41, ../sass/forms.sass */
   .input-block input:valid,
   .input-block textarea:valid {
     border: 1px solid #a1e9c5; }
+/* line 43, ../sass/forms.sass */
 .input-block input {
   height: 6.4rem;
   padding: 0 1.6rem; }
+/* line 46, ../sass/forms.sass */
 .input-block textarea {
   height: clamp(12rem, 16rem, 24rem);
   resize: vertical;
   padding: 1.6rem;
   line-height: 2.8rem; }
 
+/* line 52, ../sass/forms.sass */
 .new-upload {
   position: relative; }
+  /* line 54, ../sass/forms.sass */
   .new-upload + .new-upload {
     margin-top: 2.4rem; }
+  /* line 56, ../sass/forms.sass */
   .new-upload span {
     position: absolute;
     right: 12px;
@@ -428,6 +520,7 @@ fieldset {
     display: flex;
     cursor: pointer; }
 
+/* line 67, ../sass/forms.sass */
 .images button {
   width: 100%;
   height: 6.4rem;
@@ -437,5 +530,3 @@ fieldset {
   padding: 0 1.6rem;
   margin-top: 2.4rem;
   cursor: pointer; }
-
-/*# sourceMappingURL=style.css.map */
