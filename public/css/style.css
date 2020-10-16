@@ -266,26 +266,34 @@ main h1 {
     margin-top: 2.4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem; }
-    /* line 62, ../sass/page-orphanage.sass */
+    column-gap: 2rem;
+    line-height: 1, 5; }
+    /* line 63, ../sass/page-orphanage.sass */
     #page-orphanage .open-details img {
       display: block;
       margin-bottom: 2rem; }
-    /* line 65, ../sass/page-orphanage.sass */
+    /* line 66, ../sass/page-orphanage.sass */
     #page-orphanage .open-details div {
       padding: 3.2rem 2.4rem; }
-    /* line 67, ../sass/page-orphanage.sass */
+    /* line 68, ../sass/page-orphanage.sass */
     #page-orphanage .open-details .hour {
       background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
       border: 1px solid #b3dae2;
       border-radius: 20px;
       color: #5c8599; }
-    /* line 72, ../sass/page-orphanage.sass */
+    /* line 73, ../sass/page-orphanage.sass */
     #page-orphanage .open-details .open-on-weekends {
+      border-radius: 20px; }
+    /* line 75, ../sass/page-orphanage.sass */
+    #page-orphanage .open-details .open-on-weekends.open {
       background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
       border: 1px solid #a1e9c5;
-      border-radius: 20px;
       color: #37c77f; }
+    /* line 79, ../sass/page-orphanage.sass */
+    #page-orphanage .open-details .open-on-weekends.closed {
+      background: linear-gradient(154.16deg, #fcf0f4 7.85%, #ffffff 91.03%);
+      border: 1px solid #ffbcd4;
+      color: #ff669d; }
 
 /* line 1, ../sass/page-create-orphanage.sass */
 #page-create-orphanage {
@@ -409,32 +417,33 @@ main.width-sidebar {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s; }
-  /* line 14, ../sass/buttons.sass */
+  transition: background-color 0.2s;
+  text-decoration: none; }
+  /* line 15, ../sass/buttons.sass */
   .primary-button img {
     margin-right: 1.6rem; }
-  /* line 16, ../sass/buttons.sass */
+  /* line 17, ../sass/buttons.sass */
   .primary-button:hover {
     background: #36cf82; }
 
-/* line 19, ../sass/buttons.sass */
+/* line 20, ../sass/buttons.sass */
 .button-select {
   display: grid;
   grid-template-columns: 1fr 1fr; }
-  /* line 22, ../sass/buttons.sass */
+  /* line 23, ../sass/buttons.sass */
   .button-select button {
     height: 6.4rem;
     color: #f5f8fa;
     border: 1px solid #d3e2e5;
     color: #5c8599;
     cursor: pointer; }
-    /* line 28, ../sass/buttons.sass */
+    /* line 29, ../sass/buttons.sass */
     .button-select button:first-child {
       border-radius: 2rem 0 0 2rem; }
-    /* line 30, ../sass/buttons.sass */
+    /* line 31, ../sass/buttons.sass */
     .button-select button:last-child {
       border-radius: 0 2rem 2rem 0; }
-  /* line 32, ../sass/buttons.sass */
+  /* line 33, ../sass/buttons.sass */
   .button-select button.active {
     background: #edfff6;
     border: 1px solid #a1e9c5;

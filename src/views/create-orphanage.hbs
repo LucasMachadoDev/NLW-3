@@ -27,7 +27,7 @@
             </aside>
 
             <main class="animate-apper width-sidebar">
-                <form action="" >
+                <form action="save-orphanage" method="POST" onsubmit="validate(event)">
                     <fieldset>
                         <legend>Dados</legend>
 
@@ -48,8 +48,8 @@
                         </div>
                         
                         <div class="input-block">
-                            <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
-                            <textarea required name="about" id="about"></textarea>
+                            <label for="description">Sobre <span>Máximo de 300 caracteres</span></label>
+                            <textarea required name="description" id="description"></textarea>
                         </div>
 
                         <div class="input-block">
@@ -62,7 +62,7 @@
                             
                             <div class="images-upload" id="images">
                                 <div class="new-upload">
-                                    <input name="images" placeholder="Cole o link da foto aqui">
+                                    <input required name="images" placeholder="Cole o link da foto aqui" type="url">
                                     <span onclick="deleteField(event)"><img src="/img/remove-file.svg" alt="Remover foto"></span>
                                 </div>
                             </div>

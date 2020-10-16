@@ -85,3 +85,13 @@ function toggleSelect(event) {
     const input = document.querySelector('[name="open_on_weekends"]')
     input.value = button.dataset.value;
 }
+
+function validate(event) {
+    // Validar se lat e lng estão preenchidos
+    const lat = document.querySelector('input[name=lat]');
+    const lng = document.querySelector('input[name=lng]');
+    if(lat.value == '' && lng.value == '') {
+        event.preventDefault();
+        alert('Clique no mapa para adiconar o local do orfanato!');
+    }
+}
